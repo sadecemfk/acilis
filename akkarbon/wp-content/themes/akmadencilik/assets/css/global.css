@@ -1,0 +1,78 @@
+.cookieConsentContainer {
+    z-index: 999;
+    width: 90%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    -webkit-box-shadow: 0px 4px 10px rgba(215, 222, 230, 0.3);
+    box-shadow: 0px 4px 10px rgba(215, 222, 230, 0.3);
+    border-radius: 16px;
+    background: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 50%;
+    -webkit-transform: translate(50%);
+    transform: translate(50%);
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.cookieConsentContainer .cookieCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.cookieConsentContainer .cookieTitle a {
+    vertical-align: text-top;
+}
+.cookieConsentContainer .cookieDesc p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0 20px;
+    color: var(--text_1);
+}
+
+.cookieConsentContainer .cookieDesc a {
+    font-weight: 700;
+    color: var(--text_1);
+    text-decoration: none;
+}
+
+.cookieConsentContainer .cookieButton button {
+    display: inline-block;
+    cursor: pointer;
+    background: var(--text_1);
+    min-width: 30px;
+    min-height: 30px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.cookieConsentContainer.hidden {
+    opacity: 0;
+    display: none;
+    z-index: -99;
+}

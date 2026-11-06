@@ -1,0 +1,327 @@
+#footer {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    --tw-gradient-from: #000000 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(12 17 54 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #363636 var(--tw-gradient-to-position);
+}
+#footer-top__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+#footer-top__left {
+    grid-column: span 3 / span 3;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: rgb(255 255 255 / 0.1);
+    padding-right: 5vw;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#footer-top {
+    overflow-x: hidden;
+}
+#footer-top__logo img {
+    width: 200px;
+}
+#footer-top__left {
+    display:flex;
+    grid-column: span 3 / span 3;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+}
+
+#footer-top__contact {
+    border-spacing: 0px 16px;
+    border-collapse: separate;
+    margin-bottom: -16px;
+}
+.footer-top__contact__icon {
+    padding-right: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+}
+.footer-top__contact__label {
+    white-space: nowrap;
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+}
+.footer-top__contact__value {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+}
+.footer-top__contact__value a:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.footer-top__contact__value a {
+    --tw-text-opacity: 1;
+    color: rgb(245 245 245);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+#footer-top__right__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-top__right__menu__a {
+    position: relative;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 16px;
+    line-height: 13px;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.footer-top__right__menu__a:hover {
+    color: rgb(255 255 255);
+}
+.footer-top__right__menu__a::after {
+    position: absolute;
+    left: 0.5rem;
+    bottom: -2px;
+    display: flex;
+    height: 2px;
+    width: 0px;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 22 21);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    --tw-content: '';
+    content: var(--tw-content);
+}
+.footer-top__right__menu__a:hover::after {
+    content: var(--tw-content);
+    width: 91.666667%;
+}
+#footer-top__right {
+    grid-column: span 3 / span 3;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.title-section__title {
+    font-size: 15px;
+}
+#footer-top__right::before {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0px;
+    display: flex;
+    width: 50vw;
+    background-image: url(http://localhost/akmadencilik/wp-content/uploads/2024/06/footerbg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    --tw-content: '';
+    content: var(--tw-content);
+}
+#footer-top__right .title-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+}
+.footer-top_left_left {
+    width: 370px;
+}
+.title-section:last-child {
+    margin-bottom: 0px;
+}
+.title-section--left {
+    text-align: left;
+    position: relative;
+}
+.title-section--white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.title-section--white .fbbtn {
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 22 21);
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.fbbtn {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(10 34 88 / 0.2);
+    background-color: transparent;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(10 34 88 / var(--tw-text-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.title-section__btn {
+    margin-top: 25px;
+}
+.title-section__subtitle {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: #d91615;
+}
+.title-section--left .title-section__subtitle {
+    align-items: flex-start;
+}
+.title-section__subtitle::after {
+    display: inline-flex;
+    height: 0.125rem;
+    width: 3rem;
+    --tw-bg-opacity: 1;
+    background-color: #d91615;
+    --tw-content: '';
+    content: var(--tw-content);
+}
+#footer-bottom {
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: rgb(255 255 255 / 0.1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.fblef span, .fblef {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+}
+.fbottomic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+.fbottomic ul li a {
+    color: rgb(255 255 255);
+    font-size: 13px;
+}
+
+.fbottomic ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.fbottomic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .footer-top_left_left {
+        width: 100%;
+    }
+    #footer-top__wrapper {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    #footer-top__left {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        border: none;
+        grid-column: unset;
+        padding-right: 0;
+        width: 100% !important;
+        flex-direction: column;
+    }
+    .footer-top_left_left {
+        margin-bottom: 2rem;
+        border-bottom-width: 1px;
+        border-style: solid;
+        border-color: rgb(255 255 255 / 0.1);
+        padding-bottom: 2.5rem;
+    }
+    #footer-top__right::before {
+        position: absolute;
+        top: 0px;
+        left: -15px;
+        bottom: 0px;
+        display: flex;
+        width: 50vh;
+        background-image: url(http://localhost/akmadencilik/wp-content/uploads/2024/06/footerbg-2.jpg);
+        background-size: cover;
+        background-position: center;
+        --tw-content: '';
+        content: var(--tw-content);
+    }
+    .fbottomic {
+        display: flex;
+        align-items: unset;
+        justify-content: space-between;
+        height: 100%;
+        flex-direction: column;
+    }
+    .fbottomic ul {
+        display: flex;
+        align-items: unset;
+        justify-content: unset;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 25px;
+    }
+    .fbottomic ul li a {
+        display: block;
+        padding: 8px 0px;
+    }
+    #footer-top__right {
+        grid-column: span 3 / span 3;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .footer-top__right__menu__a {
+        position: relative;
+        display: flex;
+        padding: 5px 0;
+        font-size: 16px;
+        line-height: 13px;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+}

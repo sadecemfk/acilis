@@ -1,0 +1,173 @@
+.fixedRight {
+    transition: 0.5s;
+    position: fixed;
+    top: 50%;
+    margin-top: -7%;
+    z-index: 999;
+    cursor: pointer;
+    width: 100%;
+    right: -377px;
+    max-width: 428px;
+}
+.fixedRight .titleBox {
+    transition: 0.5s;
+}
+.myselect {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    font-size: 15px;
+}
+@media (min-width:1200px) {
+    .fixedRight .titleBox {
+        opacity: 0;
+        position: relative;
+        right: -60px;
+        top: 0;
+    }
+}
+.fixedRight .titleBox.efect {
+    right: 0;
+    top: 0;
+    opacity: 1;
+}
+@media (max-width:767px) {
+    .fixedRight {
+        margin-top: -15%;
+        max-width: 100%;
+        height: 200px;
+    }
+}
+@media (max-width:767px) {
+    .fixedRight {
+        left: calc(100% - 45px);
+        right: initial;
+    }
+}
+.fixedRight.active {
+    transition: 0.5s;
+    right: 0;
+    width: 100%;
+}
+@media (max-width:767px) {
+    .fixedRight.active {
+        left: 3px;
+    }
+}
+.fixedRight .titleBox {
+    transition: 0.5s;
+    background: #d91615;
+    width: 51px;
+    height: 245px;
+    float: left;
+    position: relative;
+}
+@media (max-width:767px) {
+    .fixedRight .titleBox {
+        width: 45px;
+        height: 195px;
+    }
+}
+.fixedRight .title {
+    transform: rotate(-90deg) translateX(5px);
+    width: 190px;
+    position: absolute;
+    right: -72px;
+    margin: 0;
+    color: #fff;
+    top: 50%;
+    font: 18px 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+}
+@media (max-width:767px) {
+    .fixedRight .title {
+        font-size: 14px;
+        right: -74px;
+        transform: rotate(-90deg) translateX(-4px);
+    }
+}
+
+.fixedRight.passive {
+    transition: 0.5s;
+    width: 51px;
+}
+.fixedRight .formBox {
+    float: left;
+    width: 377px;
+    background: #81060b;
+    right: 0;
+    position: relative;
+    top: -90px; /*height: 433px;*/
+    padding: 37px;
+    height: auto;
+}
+@media (max-width:767px) {
+    .fixedRight .formBox {
+        width: calc(100% - 48px);
+        padding: 35px 25px;
+        top: -120px;
+    }
+}
+.fixedRight .formBox .closes {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.fixedRight .formBox .closes:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 15px;
+    background: #fff;
+}
+.fixedRight .formBox .closes:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1px;
+    position: relative;
+    top: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.fixedRight .formBox .form-group {
+    margin-bottom: 15px;
+}
+.fixedRight .formBox .form-group input[type="text"],
+.fixedRight .formBox .form-group input[type="tel"],
+.fixedRight .formBox .form-group input[type="email"] {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px !important;
+    font-size: 14px;
+}
+.fixedRight .formBox .form-group input::placeholder{
+    color:#000;
+}
+.fixedRight label {
+    color: #fff;
+    font-size: 12px;
+}
+.custombtn {
+    background: #d91615;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.fixedRight .formBox h6 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}

@@ -1,0 +1,535 @@
+body.actives .header {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+body.actives .header {
+    opacity: 1;
+}
+body.actives {
+    opacity: 1
+}
+.header {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font: 15px "Poppins";
+    color: #fff;
+    transition: 0.4s;
+    transform: translateY(0);
+    background: #00000069;
+}
+@media only screen and (max-width: 1200px) {
+    .header {
+        padding: 0 20px;
+    }
+}
+.header.fixed {
+    background: #1f3765;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.header .logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .logo .logo1 {
+    width:200px;
+    height: auto;
+}
+.header .logo .logo2 {
+    display: none;
+}
+.header .d-flex {
+    height: 100px;
+}
+.header ul.rightmenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.header ul.rightmenu li:first-child {
+    padding-left: 0;
+}
+.header ul.rightmenu li {
+    padding: 0 20px;
+}
+.header ul.rightmenu li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #fff;
+    transition: .4s;
+    padding: 41px 0;
+}
+.header ul.rightmenu li a:hover {
+    color: #1080C4;
+}
+.header .get-offer-btn {
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    min-width: 200px;
+    transition: .4s;
+}
+.header .get-offer-btn i {
+    font-size: 26px;
+    margin: 0 5px;
+}
+.header .get-offer-btn:hover {
+    background: #F7FAFB;
+    color: #d91615;
+}
+@media (min-width: 1200px) {
+    .header:hover {
+        background: #000000ba;
+        border-bottom: 1px solid #000000ba;
+        color: #fff;
+        box-shadow: 0 3px 6px -3px rgb(255 255 255 / 30%);
+    }
+}
+.header-menu>ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+.header-menu>ul>li{
+    position: relative;
+}
+.header-menu>ul>li>a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #fff;
+    transition: .4s;
+    padding: 41px 0;
+    text-transform: uppercase;
+}
+.header-menu>ul>li>ul.sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+    left: 0;
+    top: 98%;
+    position: absolute;
+    text-align: left;
+    border-radius: 0 0 3px 3px;
+    padding: 0px 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: white;
+    transition: 0.3s ease-in-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 230px;
+}
+.header-menu>ul>li:hover ul.sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.header-menu>ul>li>ul.sub-menu>li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    min-width: 175px;
+}
+.header-menu>ul>li>ul.sub-menu>li>a {
+    padding: 9px 5px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+    color: var(--main_text);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.header-menu>ul>li>ul.sub-menu>li>a:hover {
+    background: #d91615;
+    color: #fff;
+}
+.header-menu {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding-left: 52px;
+}
+
+.header-menu-right>ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+.header-menu-right>ul>li{
+    position: relative;
+}
+.header-menu-right>ul>li>a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #fff;
+    transition: .4s;
+    padding: 41px 0;
+    text-transform:uppercase;
+}
+.header-menu-right>ul>li>ul.sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+    left: 0;
+    top: 98%;
+    position: absolute;
+    text-align: left;
+    border-radius: 0 0 3px 3px;
+    padding: 0px 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: white;
+    transition: 0.3s ease-in-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    padding: 10px 13px;
+}
+.header-menu-right>ul>li:hover ul.sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.header-menu-right>ul>li>ul.sub-menu>li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    min-width: 175px;
+}
+.header-menu-right>ul>li>ul.sub-menu>li>a {
+    padding: 9px 10px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+    color: var(--main_text);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.header-menu-right>ul>li>ul.sub-menu>li>a:hover {
+    background: #d91615;
+    color: #fff;
+}
+.header-menu-right {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding-right: 15px;
+}
+@media only screen and (max-width: 991px) {
+    .header{
+        display: none;
+    }
+}
+.mobilhedaer {
+    display: none;
+}
+.hamburger-menus {
+    color: #fff;
+    font-size: 32px;
+}
+#side-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+
+a.mobile-hamburger-menu .hamburger-menu {
+    position: relative;
+    transform: translateY(6px);
+    background: #fff;
+    transition: all 0ms 300ms;
+    width: 20px;
+    height: 2px;
+}
+a.mobile-hamburger-menu .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0);
+}
+a.mobile-hamburger-menu .hamburger-menu.animate.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: #000;
+}
+a.mobile-hamburger-menu .hamburger-menu.animate.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    background: #000;
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+a.mobile-hamburger-menu .hamburger-menu:after,
+a.mobile-hamburger-menu .hamburger-menu:before {
+    width: 20px;
+    height: 2px;
+}
+a.mobile-hamburger-menu .hamburger-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    background: #000;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+a.mobile-hamburger-menu .hamburger-menu:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: #000;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.show {
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+#side-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+#side-menu .backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+#side-menu .content {
+    padding: 50px 0 50px;
+    width: 75%;
+    background-color: #fff;
+    box-shadow: -3px 0 10px 0 #00000026;
+    margin-right: calc((50% + 56px) * -1);
+    overflow-y: auto;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#side-menu .content.in {
+    margin-right: 0;
+}
+#side-menu .content ul.menu {
+    margin-bottom: 35px;
+}
+#side-menu .content ul.menu li.current-menu-item a {
+    font-weight: 600;
+}
+#side-menu .content ul.menu li.opened.menu-item-has-children > a i {
+    transform: translateY(-50%) rotate(180deg);
+}
+#side-menu .content ul.menu li.opened > ul.sub-menu {
+    max-height: initial;
+}
+#side-menu .content ul.menu li.menu-item-has-children > a i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    right: 5px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #000;
+}
+#side-menu .content ul.menu li a {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    padding: 0 16px;
+    color: #1f3765;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+    text-transform: uppercase;
+}
+#side-menu .content ul.menu li ul.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#side-menu .content ul.menu li ul.sub-menu li {
+    background-color: #000;
+}
+#side-menu .content ul.menu li ul.sub-menu li a {
+    color: #fff;
+}
+#side-menu .content ul.menu li ul.sub-menu li ul.sub-menu li {
+    background-color: #999;
+}
+#side-menu .content ul.menu li ul.sub-menu li ul.sub-menu li a {
+    border-bottom-color: #fff;
+}
+#side-menu .content ul.menu li ul.sub-menu li.menu-item-has-children > a svg {
+    filter: invert(1);
+}
+#side-menu .content .lang-list li .name {
+    margin-left: 10px;
+}
+#side-menu .content ul.social-menu {
+    margin-bottom: 35px;
+}
+#side-menu .content ul.social-menu li {
+    margin-right: 16px;
+}
+#side-menu .content ul.social-menu li:last-child {
+    margin-right: 0;
+}
+#side-menu .content ul.social-menu li a {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#side-menu .content ul.social-menu li a svg {
+    color: #26282c;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    cursor: pointer;
+    padding: 15px;
+}
+.overlay .closebtn svg {
+    color: #26282c;
+    width: 40px;
+    height: 40px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.overlay .closebtn:hover svg {
+    color: #000;
+}
+.overlay form {
+    position: relative;
+}
+.overlay form .overlay-btn {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #26282c;
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.overlay form .overlay-btn:hover {
+    background-color: #000;
+}
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #26282c;
+    background: transparent;
+}
+.overlay .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+.overlay-dp {
+    opacity: 1;
+    z-index: 999999999;
+}
+@media only screen and (max-width: 992px) {
+    .topbar-default {
+        display: none;
+    }
+    header.header {
+        display: none;
+    }
+    .mobilhedaer {
+        display: block;
+        padding: 20px 0;
+        background: #151515;
+    }
+    .mheaderinner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobilheaderlogo a img {
+        width: 130px;
+        display: block;
+    }
+}

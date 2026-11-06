@@ -1,0 +1,98 @@
+.card-style-one {
+    padding: 0px 0;
+}
+.card-style-one_col{
+    border: 5px solid #f3f3f3;
+    background: #fff;
+    border-radius: 22px;
+    padding: 0;
+}
+.card-style-one_content {
+    padding: 30px;
+}
+.card-style-one_content__image {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    max-height: 230px;
+    z-index: 0;
+}
+.card-style-one_content__image img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.card-style-one_content__image .icon {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg_1);
+    opacity: 0.8;
+    border-radius: 5px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.card-style-one_content__image .icon i.none {
+    display: none;
+    opacity: 0;
+}
+.card-style-one_content__image .icon i {
+    font-size: 24px;
+    color: var(--text_white);
+    transition: all 0.3s ease-in-out;
+}
+.card-style-one_content__image::after {
+    background: var(--bg_2);
+}
+
+.card-style-one_content__image .icon {
+    background: var(--bg_2);
+}
+.card-style-one_content:hover .card-style-one_content__image .icon .hide {
+    opacity: 0;
+    display: none;
+}
+
+.card-style-one_content:hover .card-style-one_content__image .icon i.none {
+    display: inline;
+    opacity: 1;
+}
+.card-style-one_content__text {
+    border-bottom: 1px solid #F4F8FB;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.card-style-one_content__text a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+}
+.card-style-one_content__info {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+}
+.content__title .content__title-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #d91615;
+    margin-bottom: 4px;
+}
+.content__title .content__title-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--subtext);
+}
+.content__title svg path {
+    fill: var(--bg_1);
+}

@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+a, button, input {
+    outline: none;
+}
+ol, ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+b, strong{
+    font-weight: 600;
+    color: var(--base-dark);
+}
+iframe{
+    width: 100%;
+    border: none;
+    display: block;
+}
+p {
+    margin: 0 0 15px;
+}
+button:focus {
+    outline: none;
+    outline: none;
+}
+
+*::-moz-selection {
+    background: #007bff;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #007bff;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #007bff;
+    color: #fff;
+    text-shadow: none;
+}
+button:focus{
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Poppins';
+    background: #F6F7FA;
+    width: 100%;
+    outline: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color : var(--lacivert_text);
+    margin-bottom: .5rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    color: var(--lacivert_text);
+    transition: 250ms all;
+}
+a:hover {
+    color: var(--base-dark);
+}
+img{
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+pre {
+    background-color: whitesmoke;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U2ZTZlNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f5f5f5), color-stop(50%, #e6e6e6));
+    background-image: -webkit-linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+    background-image: linear-gradient(#f5f5f5 50%, #e6e6e6 50%);
+    background-size: 70px 70px;
+    border: 1px solid #d4d4d4;
+    display: block;
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding: 0 0 0 15px;
+}
+.ds-bg {
+    background: #f3f3f3;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+.text-end {
+    text-align: right !important;
+}
+.outline-btn {
+    border: 1px solid #fff;
+    padding: 15px 32px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+.pt-60 {
+    padding-top: 60px;
+}
+.section-title h2 {
+    font-weight: 700;
+}
+.butonlar .custombtn:hover {
+    color: #fff;
+}
+
+.container-fluid {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 125px;
+}
+@media only screen and (max-width: 1200px) {
+    .container-fluid {
+        padding: 0 20px;
+    }
+}
